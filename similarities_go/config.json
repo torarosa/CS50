@@ -1,5 +1,4 @@
 {
   "LayoutPath": "assets/templates/layouts/",
-  "IncludePath": "assets/templates/",
-  "Port": 8080
+  "IncludePath": "assets/templates/"
 }
