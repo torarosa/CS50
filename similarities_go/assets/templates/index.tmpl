@@ -1,6 +1,6 @@
 {{define "body"}}
 <main>
-  <form method="get" enctype="multipart/form-data">
+  <form method="post">
     <label for="firstString">First label</label>
     <input id="firstString" type="text" name="firstString">
     <label for="secondString">Second label</label>
@@ -8,4 +8,10 @@
     <input type="submit">
   </form>
 </main>
+
+<ul>
+  {{range $element := .}}
+    <li>{{$element}}</li>
+  {{end}}
+</ul>
 {{end}}
