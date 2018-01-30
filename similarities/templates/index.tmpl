@@ -1,6 +1,7 @@
+{{define "title"}}Index Page{{end}}
 {{define "body"}}
 <main>
-  <form method="post">
+  <form action="/compare" method="post">
     <label for="firstString">First label</label>
     <input id="firstString" type="text" name="firstString">
     <label for="secondString">Second label</label>
@@ -8,10 +9,4 @@
     <input type="submit">
   </form>
 </main>
-
-<ul>
-  {{range $element := .}}
-    <li>{{$element}}</li>
-  {{end}}
-</ul>
 {{end}}
