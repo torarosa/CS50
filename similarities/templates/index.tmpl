@@ -1,7 +1,7 @@
 {{define "title"}}Index Page{{end}}
 {{define "body"}}
 <main>
-  <form action="/compare" method="post">
+  <form action="/compare" method="post" enctype="application/x-www-form-urlencoded">
     <label for="firstString">First label</label>
     <input id="firstString" type="text" name="firstString">
     <label for="secondString">Second label</label>
